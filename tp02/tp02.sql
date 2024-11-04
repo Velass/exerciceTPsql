@@ -17,7 +17,7 @@ INSERT IGNORE INTO article VALUES
     (10, 'F04', 'Fraises d’encastrement', 8.14, 2);
 
 INSERT IGNORE INTO bon VALUES 
-    (1, '001', '2024-11-04', 3, 1);
+    (3, '001', '', 3, 1);
 
 INSERT IGNORE INTO compo VALUES
     (1, 3, 1, 1),
