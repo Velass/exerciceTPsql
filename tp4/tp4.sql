@@ -21,11 +21,15 @@ ORDER BY fournisseur.NOM ASC , article.prix desc
 
 -- g.	Listez les articles de la société « Dubois & Fils » 
 
-select * from article where ID_FOU = 3
+select * from article
+inner join fournisseur on article.id_fou = fournisseur.id
+where fournisseur.nom = 'Dubois & Fils'
 
 -- h.	Calculez la moyenne des prix des articles de la société « Dubois & Fils » 
 
-select avg(PRIX) from article where ID_FOU = 3
+select avg(PRIX) from article 
+inner join fournisseur on article.id_fou = fournisseur.id
+where fournisseur.nom = 'Dubois & Fils'
 
 -- i.   Calculez la moyenne des prix des articles de chaque fournisseur
 select avg(PRIX), fournisseur.nom from article INNER JOIN fournisseur ON article.ID_FOU = fournisseur.ID
