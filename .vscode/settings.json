@@ -9,9 +9,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "database": "compta",
-            "username": "root",
-            "name": "tpsql"
+            "name": "sql",
+            "database": "compta2",
+            "username": "root"
         }
     ]
 }
